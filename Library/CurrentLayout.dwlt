@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 71
+  controlID: 93
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 408
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 304
     height: 671
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 1512
     height: 947
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 72
+  controlID: 94
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,10 +231,10 @@ MonoBehaviour:
     y: 0
     width: 1512
     height: 671
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 73
+  controlID: 95
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,20 +354,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - assets/Watercraft pack/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - assets/Watercraft pack/Materials
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Users\jrb255\Downloads\Boat and First Person\tut2015ship
+  m_LastProjectPath: D:\Game Projects\Boater-Safety-Course
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 54}
-    m_SelectedIDs: aa0f0000
-    m_LastClickedID: 4010
-    m_ExpandedIDs: 00000000aa0f0000701500005818000072180000e21d0000f61e000000ca9a3b
+    m_SelectedIDs: c4530000
+    m_LastClickedID: 21444
+    m_ExpandedIDs: 0000000008510000b2560000ca5800004a59000066590000d85d0000b25e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -395,7 +395,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa0f0000ea120000c6130000701500005818000072180000e21d00008e1e0000f61e0000
+    m_ExpandedIDs: 0000000008510000b25600004a59000066590000d85d0000b25e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000c00c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -510,10 +510,10 @@ MonoBehaviour:
     height: 650
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 65.10671}
-    m_SelectedIDs: 7263feff
-    m_LastClickedID: -105614
-    m_ExpandedIDs: defbffff00000000
+    scrollPos: {x: 0, y: 215}
+    m_SelectedIDs: a880fcff
+    m_LastClickedID: -229208
+    m_ExpandedIDs: c80affff3a9dffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -532,7 +532,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - scene01-4
+  - scene02-1
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -568,9 +568,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.176832, y: -9.760961, z: 666.8773}
+    m_Target: {x: 120.44395, y: -360.9648, z: 49.05397}
     speed: 2
-    m_Value: {x: 11.176832, y: -9.760961, z: 666.8773}
+    m_Value: {x: 120.44395, y: -360.9648, z: 49.05397}
   m_RenderMode: 2
   m_CameraMode:
     drawMode: 2
@@ -598,13 +598,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.028815255, y: -0.008398807, z: 0.00024287785, w: -0.99954945}
+    m_Target: {x: -0.60139745, y: -0.19827008, z: 0.15735087, w: -0.75779337}
     speed: 2
-    m_Value: {x: -0.028815255, y: -0.008398807, z: 0.00024287785, w: -0.99954945}
+    m_Value: {x: -0.60139745, y: -0.19827008, z: 0.15735087, w: -0.75779337}
   m_Size:
-    m_Target: 677.9018
+    m_Target: 873.90216
     speed: 2
-    m_Value: 677.9018
+    m_Value: 873.90216
   m_Ortho:
     m_Target: 0
     speed: 2
