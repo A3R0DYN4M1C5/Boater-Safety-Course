@@ -1,0 +1,971 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{352DE1FB-020A-B7C6-A580-D0C065B2473D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_13;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="assets\Oculus\Avatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\P2PManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\RemotePlayer.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\RoomManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\SocialPlatformManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\VoipManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatar.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarAsset.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarAssetMesh.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarAssetTexture.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarBase.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarBody.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarComponent.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarDriver.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarLocalDriver.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarLogger.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarMaterialManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarMeshInstance.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarPacket.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarProjectorRenderComponent.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarRemoteDriver.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarRenderComponent.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSDKManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSettings.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSettingsEditor.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSV2Component.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarTextureCopyManager.cs" />
+     <Compile Include="assets\Oculus\Avatar\Scripts\OvrAvatarTouchController.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\AbuseReportOptions.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\AbuseReportType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\AchievementType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\AndroidPlatform.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\ApplicationOptions.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\BufferedAudioStream.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Callback.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\CallbackRunner.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\CAPI.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\CloudStorageDataStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\CloudStorageUpdateStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Decoder.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Encoder.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\IMicrophone.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\IVoipPCMSource.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\KeyValuePairType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\LaunchType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\LeaderboardFilterType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\LeaderboardStartAt.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\LivestreamingAudience.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\LivestreamingMicrophoneStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\LivestreamingStartStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\MatchmakingCriterionImportance.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\MatchmakingOptions.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\MatchmakingStatApproach.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\MediaContentType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Message.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\MicrophoneInput.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\MicrophoneInputNative.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AbuseReportRecording.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AchievementDefinition.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AchievementProgress.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AchievementUpdate.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\ApplicationVersion.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AssetDetails.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AssetFileDeleteResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AssetFileDownloadCancelResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AssetFileDownloadResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\AssetFileDownloadUpdate.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\CloudStorageConflictMetadata.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\CloudStorageData.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\CloudStorageMetadata.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\CloudStorageUpdateResponse.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\DeserializeableList.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\Error.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\HttpTransferUpdate.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\InstalledApplication.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LanguagePackInfo.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LaunchBlockFlowResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LaunchDetails.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LaunchFriendRequestFlowResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LaunchUnblockFlowResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LeaderboardEntry.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LinkedAccount.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LivestreamingApplicationStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LivestreamingStartResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LivestreamingStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\LivestreamingVideoStats.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingAdminSnapshot.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingAdminSnapshotCandidate.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingBrowseResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingEnqueuedUser.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingEnqueueResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingEnqueueResultAndRoom.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\MatchmakingStats.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\NetworkingPeer.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\OrgScopedID.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\Party.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\PartyID.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\Pid.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\PingResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\PlatformInitialize.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\Product.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\Purchase.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\Room.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\RoomInviteNotification.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\SdkAccount.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\ShareMediaResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\SystemPermission.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\SystemVoipState.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\User.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\UserAndRoom.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\UserProof.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Models\UserReportID.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Packet.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\PeerConnectionState.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\PermissionGrantStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\PermissionType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Platform.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\PlatformInitializeResult.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\PlatformInternal.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\PlatformSettings.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\Request.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\RoomJoinability.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\RoomJoinPolicy.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\RoomMembershipLockStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\RoomOptions.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\RoomType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\SdkAccountType.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\SendPolicy.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\ServiceProvider.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\ShareMediaStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\StandalonePlatform.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\StandalonePlatformSettings.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\SystemVoipStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\TimeWindow.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\UserOptions.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\UserOrdering.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\UserPresenceStatus.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipAudioSource.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipAudioSourceHiLevel.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipBitrate.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipDtxState.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipInput.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipMuteState.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipOptions.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipPCMSourceNative.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\VoipSampleRate.cs" />
+     <Compile Include="assets\Oculus\Platform\Scripts\WindowsPlatform.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Composition\OVRCameraComposition.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Composition\OVRComposition.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Composition\OVRCompositionUtil.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Composition\OVRDirectComposition.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Composition\OVRExternalComposition.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Composition\OVRSandwichComposition.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRBoundary.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRCameraRig.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRCommon.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRDebugHeadController.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRDisplay.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRHaptics.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRHapticsClip.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRInput.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRLayerAttribute.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRLint.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRManager.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRMixedReality.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVROnCompleteListener.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVROverlay.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRPlatformMenu.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRPlugin.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRProfile.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\OVRTracker.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRChromaticAberration.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRCubemapCapture.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRDebugInfo.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRGazePointer.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRGearVrControllerTest.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRGrabbable.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRGrabber.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRGridCube.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRInputModule.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRMixedRealityCaptureSettings.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRModeParms.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRMonoscopic.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRPhysicsRaycaster.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRPlayerController.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRPointerEventData.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRProfiler.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRProgressIndicator.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRRaycaster.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRRecord.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRResetOrientation.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRSceneSampleController.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRScreenFade.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRTrackedRemote.cs" />
+     <Compile Include="assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
+     <Compile Include="assets\scripts\boat.cs" />
+     <Compile Include="assets\scripts\switchMode.cs" />
+     <Compile Include="assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
+     <Compile Include="assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
+     <Compile Include="assets\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Boolean.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_In.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_List.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Out.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Pose.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Single.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Skeleton.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Vector2.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Vector3.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Action_Vibration.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_ActionDirections.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_ActionSet.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_ActivateActionSetOnLoad.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_Boolean.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_Pose.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_Single.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_Skeleton.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_SkeletonCustom.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_Vector2.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Behaviour_Vector3.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_DefaultAction.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_DefaultActionSet.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_ActionFile.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_ActionScopes.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_ActionSetUsages.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_Generator_Names.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_References.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_Source.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_Input_Sources.cs" />
+     <Compile Include="assets\SteamVR\Input\SteamVR_UpdateModes.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\BodyCollider.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\CircularDrive.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\ComplexThrowable.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\ControllerHoverHighlight.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\CustomEvents.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\DebugUI.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnDetachedFromHand.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnParticleSystemDeath.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnTriggerEnter.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\DistanceHaptics.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\DontDestroyOnLoad.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\EnumFlags.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Equippable.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\FallbackCameraController.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\GrabTypes.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Hand.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\HideOnHandFocusLost.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\HoverButton.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\IgnoreHovering.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\InputModule.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Interactable.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\InteractableDebug.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\InteractableHoverEvents.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackage.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackageSpawner.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearAnimation.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearAnimator.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearAudioPitch.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearBlendshape.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearDisplacement.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearDrive.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\ModalThrowable.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Player.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\RenderModel.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\SleepOnAwake.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\SoundDeparent.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\SoundPlayOneshot.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachAfterControllerIsTracking.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachToHand.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\UIElement.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\Util.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowheadRotation.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\Balloon.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonColliders.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonHapticBump.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonSpawner.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\ExplosionWobble.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\FireSource.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\Longbow.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Longbow\Scripts\SoundBowClick.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\Audio\AmbientSound.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\BuggyBuddy.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\BuggyController.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\LockToPoint.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\trackCam.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\trackObj.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\WheelDust.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Grenade\Grenade.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\JoeJeff\JoeJeff.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\JoeJeff\JoeJeffController.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\JoeJeff\ProceduralHats.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonEffect.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\ButtonExample.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\ControllerHintsExample.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\CustomSkeletonHelper.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\FloppyHand.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\FlowerPlanted.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\InteractableExample.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\Planting.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\RenderModelHolder.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\SkeletonUIOptions.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\TargetHitEffect.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Scripts\TargetMeasurement.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Samples\Squishy\SquishyToy.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\AllowTeleportWhileAttachedToHand.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\IgnoreTeleportTrace.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArc.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArea.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportMarkerBase.cs" />
+     <Compile Include="assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
+     <Compile Include="assets\SteamVR\Plugins\openvr_api.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Behaviour.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Camera.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_CameraMask.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Ears.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_EnumEqualityComparer.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Events.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_ExternalCamera.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Fade.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Frustum.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_IK.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_LoadLevel.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Menu.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Overlay.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_PlayArea.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Render.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_RenderModel.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_RingBuffer.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Settings.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Skybox.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_SphericalProjection.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_TrackedCamera.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
+     <Compile Include="assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\Arrow.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowNotch.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowSpawner.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\BowAim.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\BowAnimation.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\BowHandle.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Archery\Follow.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\AutoRotation.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Breakable_Cube.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\ButtonReactor.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Controller_Hand.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Controller_Menu.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\ControlReactor.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\ExampleSceneSimulatorCameraRigMover.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\ExcludeTeleport.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\FireExtinguisher_Base.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\FireExtinguisher_Sprayer.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Gun.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\HandLift.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Lamp.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\LightSaber.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Menu_Color_Changer.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Menu_Container_Object_Colors.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Menu_Object_Spawner.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\ModelVillage_TeleportLocation.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\MoveBlock.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Openable_Door.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\PanelMenu\PanelMenuDemoFlyingSaucer.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\PanelMenu\PanelMenuDemoSphere.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\PanelMenu\PanelMenuUIGrid.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\PanelMenu\PanelMenuUISlider.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\RC_Car.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\RC_Car_Controller.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\RealGun.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\RealGun_SafetySwitch.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\RealGun_Slide.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Remote_Beam.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Remote_Beam_Controller.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\RendererOffOnDash.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\SceneChanger.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\SnapDropZoneGroup_Switcher.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Sphere_Spawner.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Sword.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Tests\VRTK_BaseTest.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Tests\VRTK_ControllerReference_Setup.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\UI_Interactions.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\UI_Keyboard.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\UseRotate.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\VRTK_ControllerAppearance_Example.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\VRTK_ControllerEvents_ListenerExample.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\VRTK_ControllerInteract_ListenerExample.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\VRTK_ControllerPointerEvents_ListenerExample.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\VRTK_ControllerUIPointerEvents_ListenerExample.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\VRTK_RoomExtender_ControllerExample.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Whirlygig.cs" />
+     <Compile Include="assets\VRTK\Examples\ExampleResources\Scripts\Zipline.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_ConsoleViewer.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_ControllerRigidbodyActivator.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_ControllerTooltips.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_DestinationPoint.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_FramesPerSecondViewer.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_IndependentRadialMenuController.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_ObjectTooltip.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_PanelMenuController.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_PanelMenuItemController.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_PointerDirectionIndicator.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_RadialMenu.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_RadialMenuController.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\Scripts\VRTK_SnapDropZone.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\SubPrefabs\RadialMenuButton\RadialButtonIcon.cs" />
+     <Compile Include="assets\VRTK\Prefabs\Resources\SubPrefabs\RadialMenuButton\UICircle.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\Utilities\VRTK_ContentHandler.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Button.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Chest.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Control.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Door.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Drawer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Knob.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Lever.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Slider.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_SpringLever.cs" />
+     <Compile Include="assets\VRTK\Scripts\Controls\3D\VRTK_Wheel.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_BaseGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_BaseJointGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_ChildOfControllerGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_ClimbableGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_CustomJointGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_FixedJointGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_RotatorTrackGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_SpringJointGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\GrabAttachMechanics\VRTK_TrackObjectGrabAttach.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\Highlighters\VRTK_BaseHighlighter.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\Highlighters\VRTK_MaterialColorSwapHighlighter.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\Highlighters\VRTK_MaterialPropertyBlockColorSwapHighlighter.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\Highlighters\VRTK_OutlineObjectCopyHighlighter.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\SecondaryControllerGrabActions\VRTK_AxisScaleGrabAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\SecondaryControllerGrabActions\VRTK_BaseGrabAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\SecondaryControllerGrabActions\VRTK_ControlDirectionGrabAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\SecondaryControllerGrabActions\VRTK_SwapControllerGrabAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ControllerActions.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ControllerEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ControllerHaptics.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ControllerHighlighter.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_InteractableObject.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_InteractControllerAppearance.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_InteractGrab.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_InteractHaptics.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_InteractTouch.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_InteractUse.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ObjectAppearance.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ObjectAutoGrab.cs" />
+     <Compile Include="assets\VRTK\Scripts\Interactions\VRTK_ObjectTouchAutoInteract.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_CollisionTracker.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_ControllerReference.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_CurveGenerator.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_Defines.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_EventSystem.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_Logger.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_ObjectCache.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_PlayerObject.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_RoomExtender_PlayAreaGizmo.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_ScreenFade.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_TrackedController.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_TrackedHeadset.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_UIGraphicRaycaster.cs" />
+     <Compile Include="assets\VRTK\Scripts\Internal\VRTK_VRInputModule.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\ObjectControlActions\VRTK_BaseObjectControlAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\ObjectControlActions\VRTK_RotateObjectControlAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\ObjectControlActions\VRTK_SlideObjectControlAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\ObjectControlActions\VRTK_SnapRotateObjectControlAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\ObjectControlActions\VRTK_WarpObjectControlAction.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_BasicTeleport.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_ButtonControl.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_DashTeleport.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_HeightAdjustTeleport.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_MoveInPlace.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_ObjectControl.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_PlayerClimb.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_RoomExtender.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_TeleportDisableOnControllerObscured.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_TeleportDisableOnHeadsetCollision.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_TouchpadControl.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_TouchpadMovement.cs" />
+     <Compile Include="assets\VRTK\Scripts\Locomotion\VRTK_TouchpadWalking.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\PointerRenderers\VRTK_BasePointerRenderer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\PointerRenderers\VRTK_BezierPointerRenderer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\PointerRenderers\VRTK_StraightPointerRenderer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\VRTK_BasePointer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\VRTK_BezierPointer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\VRTK_DestinationMarker.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\VRTK_PlayAreaCursor.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\VRTK_Pointer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Pointers\VRTK_SimplePointer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_BodyPhysics.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_HeadsetCollision.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_HeadsetCollisionFade.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_HeadsetControllerAware.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_HeadsetFade.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_HipTracking.cs" />
+     <Compile Include="assets\VRTK\Scripts\Presence\VRTK_PositionRewind.cs" />
+     <Compile Include="assets\VRTK\Scripts\UI\VRTK_UICanvas.cs" />
+     <Compile Include="assets\VRTK\Scripts\UI\VRTK_UIDraggableItem.cs" />
+     <Compile Include="assets\VRTK\Scripts\UI\VRTK_UIDropZone.cs" />
+     <Compile Include="assets\VRTK\Scripts\UI\VRTK_UIPointer.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\ControllerModelSettings\VRTK_ControllerElementHighlighters.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\ControllerModelSettings\VRTK_ControllerModelElementPaths.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\ObjectFollow\VRTK_ObjectFollow.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\ObjectFollow\VRTK_RigidbodyFollow.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\ObjectFollow\VRTK_TransformFollow.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\SDK\VRTK_SDKInfo.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\SDK\VRTK_SDKManager.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\SDK\VRTK_SDKSetup.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\SDK\VRTK_SDKSetupSwitcher.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_BasicTeleport_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_BodyPhysics_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_Button_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_Control_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ControllerActions_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ControllerEvents_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ControllerRigidbodyActivator_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ControllerTooltips_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_DashTeleport_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_DestinationMarker_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_DestinationPoint_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_HeadsetCollision_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_HeadsetControllerAware_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_HeadsetFade_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_InteractableObject_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_InteractControllerAppearance_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_InteractGrab_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_InteractHaptics_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_InteractTouch_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_InteractUse_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ObjectAutoGrab_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ObjectControl_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_ObjectTooltip_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_PlayAreaCursor_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_PlayerClimb_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_Pointer_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_PointerDirectionIndicator_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_PositionRewind_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_SDKManager_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_SDKSetup_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_SnapDropZone_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_UIDraggableItem_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_UIPointer_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\UnityEvents\VRTK_UnityEvents.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_AdaptiveQuality.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_CustomRaycast.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_DeviceFinder.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_PolicyList.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_SDKObjectAlias.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_SDKTransformModify.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_SharedMethods.cs" />
+     <Compile Include="assets\VRTK\Scripts\Utilities\VRTK_Simulator.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_Base.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_BaseBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_BaseController.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_BaseHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_BaseSystem.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_DescriptionAttribute.cs" />
+     <Compile Include="assets\VRTK\SDK\Base\SDK_ScriptingDefineSymbolPredicateAttribute.cs" />
+     <Compile Include="assets\VRTK\SDK\Daydream\DaydreamReach.cs" />
+     <Compile Include="assets\VRTK\SDK\Daydream\SDK_DaydreamBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\Daydream\SDK_DaydreamController.cs" />
+     <Compile Include="assets\VRTK\SDK\Daydream\SDK_DaydreamDefines.cs" />
+     <Compile Include="assets\VRTK\SDK\Daydream\SDK_DaydreamHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\Daydream\SDK_DaydreamSystem.cs" />
+     <Compile Include="assets\VRTK\SDK\Fallback\SDK_FallbackBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\Fallback\SDK_FallbackController.cs" />
+     <Compile Include="assets\VRTK\SDK\Fallback\SDK_FallbackHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\Fallback\SDK_FallbackSystem.cs" />
+     <Compile Include="assets\VRTK\SDK\Oculus\SDK_OculusBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\Oculus\SDK_OculusController.cs" />
+     <Compile Include="assets\VRTK\SDK\Oculus\SDK_OculusDefines.cs" />
+     <Compile Include="assets\VRTK\SDK\Oculus\SDK_OculusHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\Oculus\SDK_OculusSystem.cs" />
+     <Compile Include="assets\VRTK\SDK\Simulator\SDK_ControllerSim.cs" />
+     <Compile Include="assets\VRTK\SDK\Simulator\SDK_InputSimulator.cs" />
+     <Compile Include="assets\VRTK\SDK\Simulator\SDK_SimBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\Simulator\SDK_SimController.cs" />
+     <Compile Include="assets\VRTK\SDK\Simulator\SDK_SimHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\Simulator\SDK_SimSystem.cs" />
+     <Compile Include="assets\VRTK\SDK\SteamVR\SDK_SteamVRBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\SteamVR\SDK_SteamVRController.cs" />
+     <Compile Include="assets\VRTK\SDK\SteamVR\SDK_SteamVRDefines.cs" />
+     <Compile Include="assets\VRTK\SDK\SteamVR\SDK_SteamVRHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\SteamVR\SDK_SteamVRSystem.cs" />
+     <Compile Include="assets\VRTK\SDK\VRTK_SDK_Bridge.cs" />
+     <Compile Include="assets\VRTK\SDK\Ximmerse\SDK_XimmerseBoundaries.cs" />
+     <Compile Include="assets\VRTK\SDK\Ximmerse\SDK_XimmerseController.cs" />
+     <Compile Include="assets\VRTK\SDK\Ximmerse\SDK_XimmerseDefines.cs" />
+     <Compile Include="assets\VRTK\SDK\Ximmerse\SDK_XimmerseHeadset.cs" />
+     <Compile Include="assets\VRTK\SDK\Ximmerse\SDK_XimmerseSystem.cs" />
+     <None Include="assets\SteamVR\Resources\SteamVR_Fade.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
+     <None Include="assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
+     <None Include="assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />
+     <None Include="assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
+     <None Include="assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+     <None Include="assets\SteamVR\InteractionSystem\Samples\BuggyBuddy\Materials\LightCone.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_Loader.shader" />
+     <None Include="assets\Oculus\VR\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="assets\VRTK\Scripts\Internal\Shaders\UIOverlay.shader" />
+     <None Include="assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+     <None Include="assets\VRTK\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
+     <None Include="assets\Oculus\VR\Resources\Cubemap Blit.shader" />
+     <None Include="assets\VRTK\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
+     <None Include="assets\Oculus\VR\Resources\OVRMRUnlit.shader" />
+     <None Include="assets\Oculus\VR\Shaders\Unlit Crosshair.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+     <None Include="assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBS.shader" />
+     <None Include="assets\Oculus\VR\Resources\OVRMRCameraFrameLit.shader" />
+     <None Include="assets\Oculus\Avatar\Samples\SocialStarter\README.txt" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_CombinedMesh.shader" />
+     <None Include="assets\Oculus\VR\Resources\Underlay Transparent Occluder.shader" />
+     <None Include="assets\Oculus\VR\Resources\Texture2D Blit.shader" />
+     <None Include="assets\SteamVR\InteractionSystem\Teleport\Shaders\HighlighGlobal.shader" />
+     <None Include="assets\Oculus\VR\Resources\OVRMRCameraFrame.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBSV2.shader" />
+     <None Include="assets\Oculus\VR\Resources\OVRMRClipPlane.shader" />
+     <None Include="assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+     <None Include="assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+     <None Include="assets\VRTK\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
+     <None Include="assets\SteamVR\readme.txt" />
+     <None Include="assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
+     <None Include="assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_SingleComponent.shader" />
+     <None Include="assets\VRTK\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
+     <None Include="assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShader.shader" />
+     <None Include="assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
+     <None Include="assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+     <None Include="assets\Oculus\VR\Resources\Underlay Impostor.shader" />
+     <None Include="assets\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
+     <None Include="assets\Oculus\VR\Plugins\placeholder.txt" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>D:/Users/jrb255/Downloads/Boat and First Person/tut2015ship/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>D:/Users/jrb255/Downloads/Boat and First Person/tut2015ship/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>D:/Users/jrb255/Downloads/Boat and First Person/tut2015ship/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>D:/Users/jrb255/Downloads/Boat and First Person/tut2015ship/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CloudWebServicesModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FacebookModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Valve.Newtonsoft.Json">
+ <HintPath>D:/Users/jrb255/Downloads/Boat and First Person/tut2015ship/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/jrb255/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/jrb255/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{9DD8ACD9-506C-2B8D-0365-D7F574B12EF3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
